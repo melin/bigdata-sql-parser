@@ -7,6 +7,37 @@
     <groupId>com.github.melin</groupId>
     <artifactId>dataworker-sql-parser</artifactId>
     <version>3.2.0</version>
+    <packaging>jar</packaging>
+    <name>>dataworker sql parser</name>
+    <url>https://github.com/melin/dataworker-sql-parser</url>
+    <description>dataworker sql parser</description>
+
+    <licenses>
+        <license>
+            <name>The Apache Software License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+
+    <issueManagement>
+        <system>github</system>
+        <url>https://github.com/melin/dataworker-sql-parser/issues</url>
+    </issueManagement>
+
+    <scm>
+        <connection>scm:git:https://github.com/melin/dataworker-sql-parser.git</connection>
+        <developerConnection>scm:git:https://github.com/melin/dataworker-sql-parser.git</developerConnection>
+        <url>https://github.com/melin/dataworker-sql-parser</url>
+    </scm>
+
+    <developers>
+        <developer>
+            <name>melin</name>
+            <email>libinsong1204@gmail.com</email>
+            <url>https://github.com/melin</url>
+        </developer>
+    </developers>
 
     <properties>
         <kotlin.version>1.4.0</kotlin.version>
@@ -254,41 +285,14 @@
         </plugins>
     </build>
 
-    <licenses>
-        <license>
-            <name>The Apache Software License, Version 2.0</name>
-            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
-            <distribution>repo</distribution>
-        </license>
-    </licenses>
-
-    <issueManagement>
-        <system>github</system>
-        <url>https://github.com/melin/dataworker-sql-parser/issues</url>
-    </issueManagement>
-
-    <scm>
-        <connection>scm:git:https://github.com/melin/dataworker-sql-parser.git</connection>
-        <developerConnection>scm:git:https://github.com/melin/dataworker-sql-parser.git</developerConnection>
-        <url>https://github.com/melin/dataworker-sql-parser</url>
-    </scm>
-
-    <developers>
-        <developer>
-            <name>melin</name>
-            <email>libinsong1204@gmail.com</email>
-            <url>https://github.com/melin</url>
-        </developer>
-    </developers>
-
     <distributionManagement>
         <repository>
             <id>ossrh</id>
-            <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+            <url>https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/</url>
         </repository>
         <snapshotRepository>
             <id>ossrh</id>
-            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+            <url>https://s01.oss.sonatype.org/content/repositories/snapshots</url>
         </snapshotRepository>
     </distributionManagement>
 
