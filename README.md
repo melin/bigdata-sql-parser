@@ -1,6 +1,6 @@
 ### 介绍
 
-基于antlr4 statement 解析器，支持spark sql, tidb sql, flink sql, Spark/flink jar 运行命令解析
+基于antlr4 statement 解析器，支持spark sql, tidb sql, flink sql, Spark/flink jar 运行命令解析。开发大数据平台和BI等系统时，需要解析一下用到的数据库SQL，获取SQL语句类型、表、函数等信息，校验权限或者限制某种sql不允许执行等需求。
 
 ```xml
 <dependency>
