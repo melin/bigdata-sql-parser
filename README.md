@@ -6,6 +6,7 @@
 <dependency>
     <groupId>com.github.melin</groupId>
     <artifactId>dataworker-sql-parser</artifactId>
+    <!-- 版本号与spark 最新版本对其 -->
     <version>3.2.0</version>
 </dependency>
 ```
