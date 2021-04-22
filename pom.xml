@@ -40,7 +40,7 @@
     </developers>
 
     <properties>
-        <kotlin.version>1.4.0</kotlin.version>
+        <kotlin.version>1.4.32</kotlin.version>
         <antlr4.version>4.8-1</antlr4.version>
     </properties>
 
@@ -73,7 +73,7 @@
         <dependency>
             <groupId>com.alibaba</groupId>
             <artifactId>druid</artifactId>
-            <version>1.2.5</version>
+            <version>1.2.6</version>
         </dependency>
 
         <dependency>
