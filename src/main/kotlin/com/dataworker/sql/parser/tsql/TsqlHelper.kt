@@ -3,7 +3,6 @@ package com.dataworker.sql.parser.tsql
 import com.dataworker.sql.parser.StatementType
 import com.dataworker.sql.parser.antlr4.ParseErrorListener
 import com.dataworker.sql.parser.antlr4.ParseException
-import com.dataworker.sql.parser.antlr4.PostProcessor
 import com.dataworker.sql.parser.antlr4.UpperCaseCharStream
 import com.dataworker.sql.parser.antlr4.tsql.TSqlLexer
 import com.dataworker.sql.parser.antlr4.tsql.TSqlParser
