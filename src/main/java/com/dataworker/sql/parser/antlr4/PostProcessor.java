@@ -8,6 +8,14 @@ import org.antlr.v4.runtime.Token;
 
 public class PostProcessor extends SparkSqlBaseBaseListener {
 
+    @Override
+    public void exitErrorIdent(SparkSqlBaseParser.ErrorIdentContext ctx) {
+        String ident = ctx.getParent().getText();
+
+        throw new ParseException("Possibly unquoted identifier $ident detected. " +
+                "Please consider quoting it with back-quotes as " + ident, ctx);
+    }
+
     /** Remove the back ticks from an Identifier. */
     @Override
     public void exitQuotedIdentifier(SparkSqlBaseParser.QuotedIdentifierContext ctx) {

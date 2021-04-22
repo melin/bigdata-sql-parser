@@ -1,5 +1,6 @@
 package com.dataworker.sql.parser.antlr4;
 
+import org.antlr.v4.runtime.ParserRuleContext;
 import org.apache.commons.lang3.StringUtils;
 
 public class ParseException extends RuntimeException {
@@ -7,6 +8,13 @@ public class ParseException extends RuntimeException {
     private String message;
     private Origin start;
     private Origin stop;
+
+    public ParseException(String message, ParserRuleContext ctx){
+        this(ParserUtils.command(ctx),
+                message,
+                ParserUtils.position(ctx.getStart()),
+                ParserUtils.position(ctx.getStop()));
+    }
 
     public ParseException(String message, Origin start, Origin stop) {
         this.message = message;

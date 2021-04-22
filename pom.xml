@@ -41,7 +41,7 @@
 
     <properties>
         <kotlin.version>1.4.0</kotlin.version>
-        <antlr4.version>4.7.1</antlr4.version>
+        <antlr4.version>4.8-1</antlr4.version>
     </properties>
 
     <dependencies>
