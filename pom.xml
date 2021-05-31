@@ -285,7 +285,7 @@
         </plugins>
     </build>
 
-    <distributionManagement>
+    <!--<distributionManagement>
         <repository>
             <id>ossrh</id>
             <url>https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/</url>
@@ -293,6 +293,17 @@
         <snapshotRepository>
             <id>ossrh</id>
             <url>https://s01.oss.sonatype.org/content/repositories/snapshots</url>
+        </snapshotRepository>
+    </distributionManagement>-->
+
+    <distributionManagement>
+        <repository>
+            <id>tongdun-nexus</id>
+            <url>http://maven.fraudmetrix.cn/nexus/content/repositories/releases/</url>
+        </repository>
+        <snapshotRepository>
+            <id>tongdun-nexus</id>
+            <url>http://maven.fraudmetrix.cn/nexus/content/repositories/snapshots/</url>
         </snapshotRepository>
     </distributionManagement>
 
