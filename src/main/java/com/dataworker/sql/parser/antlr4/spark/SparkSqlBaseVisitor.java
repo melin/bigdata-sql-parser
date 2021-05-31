@@ -1,4 +1,4 @@
-// Generated from com/dataworker/sql/parser/antlr4/spark/SparkSqlBase.g4 by ANTLR 4.7.1
+// Generated from com/dataworker/sql/parser/antlr4/spark/SparkSqlBase.g4 by ANTLR 4.8
 package com.dataworker.sql.parser.antlr4.spark;
 import org.antlr.v4.runtime.tree.ParseTreeVisitor;
 
@@ -1040,6 +1040,24 @@ public interface SparkSqlBaseVisitor<T> extends ParseTreeVisitor<T> {
 	 */
 	T visitAggregationClause(SparkSqlBaseParser.AggregationClauseContext ctx);
 	/**
+	 * Visit a parse tree produced by {@link SparkSqlBaseParser#groupByClause}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitGroupByClause(SparkSqlBaseParser.GroupByClauseContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link SparkSqlBaseParser#groupingAnalytics}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitGroupingAnalytics(SparkSqlBaseParser.GroupingAnalyticsContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link SparkSqlBaseParser#groupingElement}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitGroupingElement(SparkSqlBaseParser.GroupingElementContext ctx);
+	/**
 	 * Visit a parse tree produced by {@link SparkSqlBaseParser#groupingSet}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
@@ -1318,6 +1336,12 @@ public interface SparkSqlBaseVisitor<T> extends ParseTreeVisitor<T> {
 	 * @return the visitor result
 	 */
 	T visitExpression(SparkSqlBaseParser.ExpressionContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link SparkSqlBaseParser#expressionSeq}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitExpressionSeq(SparkSqlBaseParser.ExpressionSeqContext ctx);
 	/**
 	 * Visit a parse tree produced by the {@code logicalNot}
 	 * labeled alternative in {@link SparkSqlBaseParser#booleanExpression}.
@@ -1649,6 +1673,20 @@ public interface SparkSqlBaseVisitor<T> extends ParseTreeVisitor<T> {
 	 * @return the visitor result
 	 */
 	T visitComplexDataType(SparkSqlBaseParser.ComplexDataTypeContext ctx);
+	/**
+	 * Visit a parse tree produced by the {@code yearMonthIntervalDataType}
+	 * labeled alternative in {@link SparkSqlBaseParser#dataType}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitYearMonthIntervalDataType(SparkSqlBaseParser.YearMonthIntervalDataTypeContext ctx);
+	/**
+	 * Visit a parse tree produced by the {@code dayTimeIntervalDataType}
+	 * labeled alternative in {@link SparkSqlBaseParser#dataType}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitDayTimeIntervalDataType(SparkSqlBaseParser.DayTimeIntervalDataTypeContext ctx);
 	/**
 	 * Visit a parse tree produced by the {@code primitiveDataType}
 	 * labeled alternative in {@link SparkSqlBaseParser#dataType}.

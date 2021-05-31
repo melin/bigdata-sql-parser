@@ -1,4 +1,4 @@
-// Generated from com/dataworker/sql/parser/antlr4/clickhouse/ClickHouseParser.g4 by ANTLR 4.7.1
+// Generated from com/dataworker/sql/parser/antlr4/clickhouse/ClickHouseParser.g4 by ANTLR 4.8
 package com.dataworker.sql.parser.antlr4.clickhouse;
 import org.antlr.v4.runtime.atn.*;
 import org.antlr.v4.runtime.dfa.DFA;
@@ -11,7 +11,7 @@ import java.util.ArrayList;
 
 @SuppressWarnings({"all", "warnings", "unchecked", "unused", "cast"})
 public class ClickHouseParser extends Parser {
-	static { RuntimeMetaData.checkVersion("4.7.1", RuntimeMetaData.VERSION); }
+	static { RuntimeMetaData.checkVersion("4.8", RuntimeMetaData.VERSION); }
 
 	protected static final DFA[] _decisionToDFA;
 	protected static final PredictionContextCache _sharedContextCache =
@@ -85,87 +85,96 @@ public class ClickHouseParser extends Parser {
 		RULE_keywordForAlias = 102, RULE_alias = 103, RULE_identifier = 104, RULE_columnType = 105, 
 		RULE_columnNameIdentifier = 106, RULE_functionIdentifier = 107, RULE_identifierOrNull = 108, 
 		RULE_enumValue = 109;
-	public static final String[] ruleNames = {
-		"queryStmt", "query", "alterStmt", "alterTableClause", "assignmentExprList", 
-		"assignmentExpr", "tableColumnPropertyType", "partitionClause", "attachStmt", 
-		"checkStmt", "createStmt", "dictionarySchemaClause", "dictionaryAttrDfnt", 
-		"dictionaryEngineClause", "dictionaryPrimaryKeyClause", "dictionaryArgExpr", 
-		"sourceClause", "lifetimeClause", "layoutClause", "rangeClause", "dictionarySettingsClause", 
-		"clusterClause", "uuidClause", "destinationClause", "subqueryClause", 
-		"tableSchemaClause", "engineClause", "partitionByClause", "primaryKeyClause", 
-		"sampleByClause", "ttlClause", "engineExpr", "tableElementExpr", "tableColumnDfnt", 
-		"tableColumnPropertyExpr", "tableIndexDfnt", "codecExpr", "codecArgExpr", 
-		"ttlExpr", "describeStmt", "dropStmt", "existsStmt", "explainStmt", "insertStmt", 
-		"columnsClause", "dataClause", "killStmt", "optimizeStmt", "renameStmt", 
-		"selectUnionStmt", "selectStmtWithParens", "selectStmt", "withClause", 
-		"topClause", "fromClause", "arrayJoinClause", "prewhereClause", "whereClause", 
-		"groupByClause", "havingClause", "orderByClause", "limitByClause", "limitClause", 
-		"settingsClause", "commentClause", "joinExpr", "joinOp", "joinOpCross", 
-		"joinConstraintClause", "sampleClause", "limitExpr", "orderExprList", 
-		"orderExpr", "ratioExpr", "settingExprList", "settingExpr", "setStmt", 
-		"showStmt", "systemStmt", "truncateStmt", "useStmt", "watchStmt", "columnTypeExpr", 
-		"columnExprList", "columnsExpr", "columnExpr", "columnArgList", "columnArgExpr", 
-		"columnLambdaExpr", "columnIdentifier", "nestedIdentifier", "tableExpr", 
-		"tableFunctionExpr", "tableIdentifier", "tableArgList", "tableArgExpr", 
-		"databaseIdentifier", "floatingLiteral", "numberLiteral", "literal", "interval", 
-		"keyword", "keywordForAlias", "alias", "identifier", "columnType", "columnNameIdentifier", 
-		"functionIdentifier", "identifierOrNull", "enumValue"
-	};
+	private static String[] makeRuleNames() {
+		return new String[] {
+			"queryStmt", "query", "alterStmt", "alterTableClause", "assignmentExprList", 
+			"assignmentExpr", "tableColumnPropertyType", "partitionClause", "attachStmt", 
+			"checkStmt", "createStmt", "dictionarySchemaClause", "dictionaryAttrDfnt", 
+			"dictionaryEngineClause", "dictionaryPrimaryKeyClause", "dictionaryArgExpr", 
+			"sourceClause", "lifetimeClause", "layoutClause", "rangeClause", "dictionarySettingsClause", 
+			"clusterClause", "uuidClause", "destinationClause", "subqueryClause", 
+			"tableSchemaClause", "engineClause", "partitionByClause", "primaryKeyClause", 
+			"sampleByClause", "ttlClause", "engineExpr", "tableElementExpr", "tableColumnDfnt", 
+			"tableColumnPropertyExpr", "tableIndexDfnt", "codecExpr", "codecArgExpr", 
+			"ttlExpr", "describeStmt", "dropStmt", "existsStmt", "explainStmt", "insertStmt", 
+			"columnsClause", "dataClause", "killStmt", "optimizeStmt", "renameStmt", 
+			"selectUnionStmt", "selectStmtWithParens", "selectStmt", "withClause", 
+			"topClause", "fromClause", "arrayJoinClause", "prewhereClause", "whereClause", 
+			"groupByClause", "havingClause", "orderByClause", "limitByClause", "limitClause", 
+			"settingsClause", "commentClause", "joinExpr", "joinOp", "joinOpCross", 
+			"joinConstraintClause", "sampleClause", "limitExpr", "orderExprList", 
+			"orderExpr", "ratioExpr", "settingExprList", "settingExpr", "setStmt", 
+			"showStmt", "systemStmt", "truncateStmt", "useStmt", "watchStmt", "columnTypeExpr", 
+			"columnExprList", "columnsExpr", "columnExpr", "columnArgList", "columnArgExpr", 
+			"columnLambdaExpr", "columnIdentifier", "nestedIdentifier", "tableExpr", 
+			"tableFunctionExpr", "tableIdentifier", "tableArgList", "tableArgExpr", 
+			"databaseIdentifier", "floatingLiteral", "numberLiteral", "literal", 
+			"interval", "keyword", "keywordForAlias", "alias", "identifier", "columnType", 
+			"columnNameIdentifier", "functionIdentifier", "identifierOrNull", "enumValue"
+		};
+	}
+	public static final String[] ruleNames = makeRuleNames();
 
-	private static final String[] _LITERAL_NAMES = {
-		null, null, null, null, null, null, null, null, null, null, null, null, 
-		null, null, null, null, null, null, null, null, null, null, null, null, 
-		null, null, null, null, null, null, null, null, null, null, null, null, 
-		null, null, null, null, null, null, null, null, null, null, null, null, 
-		null, null, null, null, null, null, null, null, null, null, null, null, 
-		null, null, null, null, null, null, null, null, null, null, null, null, 
-		null, null, null, null, null, null, null, null, null, null, null, null, 
-		null, null, null, null, null, null, null, null, null, null, null, null, 
-		null, null, null, null, null, null, null, null, null, null, null, null, 
-		null, null, null, null, null, null, null, null, null, null, null, null, 
-		null, null, null, null, null, null, null, null, null, null, null, null, 
-		null, null, null, null, null, null, null, null, null, null, null, null, 
-		null, null, null, null, null, null, null, null, null, null, null, null, 
-		null, null, null, null, null, null, null, null, null, null, null, null, 
-		null, null, null, null, null, null, null, null, null, null, null, "'false'", 
-		"'true'", null, null, null, null, null, null, "'->'", "'*'", "'`'", "'\\'", 
-		"':'", "','", "'||'", "'-'", "'.'", "'=='", "'='", "'>='", "'>'", "'{'", 
-		"'['", "'<='", "'('", "'<'", null, "'%'", "'+'", "'?'", "'\"'", "'''", 
-		"'}'", "']'", "')'", "';'", "'/'", "'_'"
-	};
-	private static final String[] _SYMBOLIC_NAMES = {
-		null, "ADD", "AFTER", "ALIAS", "ALL", "ALTER", "AND", "ANTI", "ANY", "ARRAY", 
-		"AS", "ASCENDING", "ASOF", "ASYNC", "ATTACH", "BETWEEN", "BOTH", "BY", 
-		"CASE", "CAST", "CHECK", "CLEAR", "CLUSTER", "CODEC", "COLLATE", "COLUMN", 
-		"COMMENT", "CONSTRAINT", "CREATE", "CROSS", "CUBE", "DATABASE", "DATABASES", 
-		"DATE", "DAY", "DEDUPLICATE", "DEFAULT", "DELAY", "DELETE", "DESC", "DESCENDING", 
-		"DESCRIBE", "DETACH", "DICTIONARIES", "DICTIONARY", "DISK", "DISTINCT", 
-		"DISTRIBUTED", "DROP", "ELSE", "END", "ENGINE", "EVENTS", "EXISTS", "EXPLAIN", 
-		"EXPRESSION", "EXTRACT", "FETCHES", "FINAL", "FIRST", "FLUSH", "FOR", 
-		"FORMAT", "FREEZE", "FROM", "FULL", "FUNCTION", "GLOBAL", "GRANULARITY", 
-		"GROUP", "HAVING", "HIERARCHICAL", "HOUR", "ID", "IF", "ILIKE", "IN", 
-		"INDEX", "INF", "INJECTIVE", "INNER", "INSERT", "INTERVAL", "INTO", "IS", 
-		"IS_OBJECT_ID", "JOIN", "KEY", "KILL", "LAST", "LAYOUT", "LEADING", "LEFT", 
-		"LIFETIME", "LIKE", "LIMIT", "LIVE", "LOCAL", "LOGS", "MATERIALIZED", 
-		"MAX", "MERGES", "MIN", "MINUTE", "MODIFY", "MONTH", "MOVE", "MUTATION", 
-		"NAN_SQL", "NO", "NOT", "NULL_SQL", "NULLS", "OFFSET", "ON", "OPTIMIZE", 
-		"OR", "ORDER", "OUTER", "OUTFILE", "PARTITION", "POPULATE", "PREWHERE", 
-		"PRIMARY", "QUARTER", "RANGE", "RELOAD", "REMOVE", "RENAME", "REPLACE", 
-		"REPLICA", "REPLICATED", "RIGHT", "ROLLUP", "SAMPLE", "SECOND", "SELECT", 
-		"SEMI", "SENDS", "SET", "SETTINGS", "SHOW", "SOURCE", "START", "STOP", 
-		"SUBSTRING", "SYNC", "SYNTAX", "SYSTEM", "TABLE", "TABLES", "TEMPORARY", 
-		"TEST", "THEN", "TIES", "TIMEOUT", "TIMESTAMP", "TO", "TOP", "TOTALS", 
-		"TRAILING", "TRIM", "TRUNCATE", "TTL", "TYPE", "UNION", "UPDATE", "USE", 
-		"USING", "UUID", "VALUES", "VIEW", "VOLUME", "WATCH", "WEEK", "WHEN", 
-		"WHERE", "WITH", "YEAR", "JSON_FALSE", "JSON_TRUE", "IDENTIFIER", "FLOATING_LITERAL", 
-		"OCTAL_LITERAL", "DECIMAL_LITERAL", "HEXADECIMAL_LITERAL", "STRING_LITERAL", 
-		"ARROW", "ASTERISK", "BACKQUOTE", "BACKSLASH", "COLON", "COMMA", "CONCAT", 
-		"DASH", "DOT", "EQ_DOUBLE", "EQ_SINGLE", "GE", "GT", "LBRACE", "LBRACKET", 
-		"LE", "LPAREN", "LT", "NOT_EQ", "PERCENT", "PLUS", "QUERY", "QUOTE_DOUBLE", 
-		"QUOTE_SINGLE", "RBRACE", "RBRACKET", "RPAREN", "SEMICOLON", "SLASH", 
-		"UNDERSCORE", "MULTI_LINE_COMMENT", "SINGLE_LINE_COMMENT", "WHITESPACE", 
-		"INTERVAL_TYPE"
-	};
+	private static String[] makeLiteralNames() {
+		return new String[] {
+			null, null, null, null, null, null, null, null, null, null, null, null, 
+			null, null, null, null, null, null, null, null, null, null, null, null, 
+			null, null, null, null, null, null, null, null, null, null, null, null, 
+			null, null, null, null, null, null, null, null, null, null, null, null, 
+			null, null, null, null, null, null, null, null, null, null, null, null, 
+			null, null, null, null, null, null, null, null, null, null, null, null, 
+			null, null, null, null, null, null, null, null, null, null, null, null, 
+			null, null, null, null, null, null, null, null, null, null, null, null, 
+			null, null, null, null, null, null, null, null, null, null, null, null, 
+			null, null, null, null, null, null, null, null, null, null, null, null, 
+			null, null, null, null, null, null, null, null, null, null, null, null, 
+			null, null, null, null, null, null, null, null, null, null, null, null, 
+			null, null, null, null, null, null, null, null, null, null, null, null, 
+			null, null, null, null, null, null, null, null, null, null, null, null, 
+			null, null, null, null, null, null, null, null, null, null, null, "'false'", 
+			"'true'", null, null, null, null, null, null, "'->'", "'*'", "'`'", "'\\'", 
+			"':'", "','", "'||'", "'-'", "'.'", "'=='", "'='", "'>='", "'>'", "'{'", 
+			"'['", "'<='", "'('", "'<'", null, "'%'", "'+'", "'?'", "'\"'", "'''", 
+			"'}'", "']'", "')'", "';'", "'/'", "'_'"
+		};
+	}
+	private static final String[] _LITERAL_NAMES = makeLiteralNames();
+	private static String[] makeSymbolicNames() {
+		return new String[] {
+			null, "ADD", "AFTER", "ALIAS", "ALL", "ALTER", "AND", "ANTI", "ANY", 
+			"ARRAY", "AS", "ASCENDING", "ASOF", "ASYNC", "ATTACH", "BETWEEN", "BOTH", 
+			"BY", "CASE", "CAST", "CHECK", "CLEAR", "CLUSTER", "CODEC", "COLLATE", 
+			"COLUMN", "COMMENT", "CONSTRAINT", "CREATE", "CROSS", "CUBE", "DATABASE", 
+			"DATABASES", "DATE", "DAY", "DEDUPLICATE", "DEFAULT", "DELAY", "DELETE", 
+			"DESC", "DESCENDING", "DESCRIBE", "DETACH", "DICTIONARIES", "DICTIONARY", 
+			"DISK", "DISTINCT", "DISTRIBUTED", "DROP", "ELSE", "END", "ENGINE", "EVENTS", 
+			"EXISTS", "EXPLAIN", "EXPRESSION", "EXTRACT", "FETCHES", "FINAL", "FIRST", 
+			"FLUSH", "FOR", "FORMAT", "FREEZE", "FROM", "FULL", "FUNCTION", "GLOBAL", 
+			"GRANULARITY", "GROUP", "HAVING", "HIERARCHICAL", "HOUR", "ID", "IF", 
+			"ILIKE", "IN", "INDEX", "INF", "INJECTIVE", "INNER", "INSERT", "INTERVAL", 
+			"INTO", "IS", "IS_OBJECT_ID", "JOIN", "KEY", "KILL", "LAST", "LAYOUT", 
+			"LEADING", "LEFT", "LIFETIME", "LIKE", "LIMIT", "LIVE", "LOCAL", "LOGS", 
+			"MATERIALIZED", "MAX", "MERGES", "MIN", "MINUTE", "MODIFY", "MONTH", 
+			"MOVE", "MUTATION", "NAN_SQL", "NO", "NOT", "NULL_SQL", "NULLS", "OFFSET", 
+			"ON", "OPTIMIZE", "OR", "ORDER", "OUTER", "OUTFILE", "PARTITION", "POPULATE", 
+			"PREWHERE", "PRIMARY", "QUARTER", "RANGE", "RELOAD", "REMOVE", "RENAME", 
+			"REPLACE", "REPLICA", "REPLICATED", "RIGHT", "ROLLUP", "SAMPLE", "SECOND", 
+			"SELECT", "SEMI", "SENDS", "SET", "SETTINGS", "SHOW", "SOURCE", "START", 
+			"STOP", "SUBSTRING", "SYNC", "SYNTAX", "SYSTEM", "TABLE", "TABLES", "TEMPORARY", 
+			"TEST", "THEN", "TIES", "TIMEOUT", "TIMESTAMP", "TO", "TOP", "TOTALS", 
+			"TRAILING", "TRIM", "TRUNCATE", "TTL", "TYPE", "UNION", "UPDATE", "USE", 
+			"USING", "UUID", "VALUES", "VIEW", "VOLUME", "WATCH", "WEEK", "WHEN", 
+			"WHERE", "WITH", "YEAR", "JSON_FALSE", "JSON_TRUE", "IDENTIFIER", "FLOATING_LITERAL", 
+			"OCTAL_LITERAL", "DECIMAL_LITERAL", "HEXADECIMAL_LITERAL", "STRING_LITERAL", 
+			"ARROW", "ASTERISK", "BACKQUOTE", "BACKSLASH", "COLON", "COMMA", "CONCAT", 
+			"DASH", "DOT", "EQ_DOUBLE", "EQ_SINGLE", "GE", "GT", "LBRACE", "LBRACKET", 
+			"LE", "LPAREN", "LT", "NOT_EQ", "PERCENT", "PLUS", "QUERY", "QUOTE_DOUBLE", 
+			"QUOTE_SINGLE", "RBRACE", "RBRACKET", "RPAREN", "SEMICOLON", "SLASH", 
+			"UNDERSCORE", "MULTI_LINE_COMMENT", "SINGLE_LINE_COMMENT", "WHITESPACE", 
+			"INTERVAL_TYPE"
+		};
+	}
+	private static final String[] _SYMBOLIC_NAMES = makeSymbolicNames();
 	public static final Vocabulary VOCABULARY = new VocabularyImpl(_LITERAL_NAMES, _SYMBOLIC_NAMES);
 
 	/**
@@ -215,6 +224,7 @@ public class ClickHouseParser extends Parser {
 		super(input);
 		_interp = new ParserATNSimulator(this,_ATN,_decisionToDFA,_sharedContextCache);
 	}
+
 	public static class QueryStmtContext extends ParserRuleContext {
 		public QueryContext query() {
 			return getRuleContext(QueryContext.class,0);

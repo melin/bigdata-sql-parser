@@ -1,4 +1,4 @@
-// Generated from com/dataworker/sql/parser/antlr4/job/JobTaskParser.g4 by ANTLR 4.7.1
+// Generated from com/dataworker/sql/parser/antlr4/job/JobTaskParser.g4 by ANTLR 4.8
 package com.dataworker.sql.parser.antlr4.job;
 import org.antlr.v4.runtime.atn.*;
 import org.antlr.v4.runtime.dfa.DFA;
@@ -6,44 +6,56 @@ import org.antlr.v4.runtime.*;
 import org.antlr.v4.runtime.misc.*;
 import org.antlr.v4.runtime.tree.*;
 import java.util.List;
+import java.util.Iterator;
+import java.util.ArrayList;
 
 @SuppressWarnings({"all", "warnings", "unchecked", "unused", "cast"})
 public class JobTaskParser extends Parser {
-	static { RuntimeMetaData.checkVersion("4.7.1", RuntimeMetaData.VERSION); }
+	static { RuntimeMetaData.checkVersion("4.8", RuntimeMetaData.VERSION); }
 
 	protected static final DFA[] _decisionToDFA;
 	protected static final PredictionContextCache _sharedContextCache =
 		new PredictionContextCache();
 	public static final int
-		SPACE=1, SPEC_MYSQL_COMMENT=2, COMMENT_INPUT=3, LINE_COMMENT=4, SET=5,
-		UNSET=6, STAR=7, DIVIDE=8, MODULE=9, PLUS=10, MINUS=11, EQUAL_SYMBOL=12,
-		GREATER_SYMBOL=13, LESS_SYMBOL=14, EXCLAMATION_SYMBOL=15, BIT_NOT_OP=16,
-		BIT_OR_OP=17, BIT_AND_OP=18, BIT_XOR_OP=19, DOT=20, LR_BRACKET=21, RR_BRACKET=22,
-		COMMA=23, SEMI=24, DOT_ID=25, ID=26, REVERSE_QUOTE_ID=27, STRING_LITERAL=28,
+		SPACE=1, SPEC_MYSQL_COMMENT=2, COMMENT_INPUT=3, LINE_COMMENT=4, SET=5, 
+		UNSET=6, STAR=7, DIVIDE=8, MODULE=9, PLUS=10, MINUS=11, EQUAL_SYMBOL=12, 
+		GREATER_SYMBOL=13, LESS_SYMBOL=14, EXCLAMATION_SYMBOL=15, BIT_NOT_OP=16, 
+		BIT_OR_OP=17, BIT_AND_OP=18, BIT_XOR_OP=19, DOT=20, LR_BRACKET=21, RR_BRACKET=22, 
+		COMMA=23, SEMI=24, DOT_ID=25, ID=26, REVERSE_QUOTE_ID=27, STRING_LITERAL=28, 
 		ERROR_RECONGNIGION=29;
 	public static final int
-		RULE_root = 0, RULE_jobTasks = 1, RULE_jobTask = 2, RULE_jobStatement = 3,
-		RULE_resourceNameExpr = 4, RULE_classNameExpr = 5, RULE_paramsExpr = 6,
-		RULE_paramExpr = 7, RULE_fileDir = 8, RULE_setStatement = 9, RULE_unsetStatement = 10,
+		RULE_root = 0, RULE_jobTasks = 1, RULE_jobTask = 2, RULE_jobStatement = 3, 
+		RULE_resourceNameExpr = 4, RULE_classNameExpr = 5, RULE_paramsExpr = 6, 
+		RULE_paramExpr = 7, RULE_fileDir = 8, RULE_setStatement = 9, RULE_unsetStatement = 10, 
 		RULE_keyExpr = 11, RULE_valueExpr = 12, RULE_word = 13, RULE_emptyStatement = 14;
-	public static final String[] ruleNames = {
-		"root", "jobTasks", "jobTask", "jobStatement", "resourceNameExpr", "classNameExpr",
-		"paramsExpr", "paramExpr", "fileDir", "setStatement", "unsetStatement",
-		"keyExpr", "valueExpr", "word", "emptyStatement"
-	};
+	private static String[] makeRuleNames() {
+		return new String[] {
+			"root", "jobTasks", "jobTask", "jobStatement", "resourceNameExpr", "classNameExpr", 
+			"paramsExpr", "paramExpr", "fileDir", "setStatement", "unsetStatement", 
+			"keyExpr", "valueExpr", "word", "emptyStatement"
+		};
+	}
+	public static final String[] ruleNames = makeRuleNames();
 
-	private static final String[] _LITERAL_NAMES = {
-		null, null, null, null, null, "'SET'", "'UNSET'", "'*'", "'/'", "'%'",
-		"'+'", "'-'", "'='", "'>'", "'<'", "'!'", "'~'", "'|'", "'&'", "'^'",
-		"'.'", "'('", "')'", "','", "';'"
-	};
-	private static final String[] _SYMBOLIC_NAMES = {
-		null, "SPACE", "SPEC_MYSQL_COMMENT", "COMMENT_INPUT", "LINE_COMMENT",
-		"SET", "UNSET", "STAR", "DIVIDE", "MODULE", "PLUS", "MINUS", "EQUAL_SYMBOL",
-		"GREATER_SYMBOL", "LESS_SYMBOL", "EXCLAMATION_SYMBOL", "BIT_NOT_OP", "BIT_OR_OP",
-		"BIT_AND_OP", "BIT_XOR_OP", "DOT", "LR_BRACKET", "RR_BRACKET", "COMMA",
-		"SEMI", "DOT_ID", "ID", "REVERSE_QUOTE_ID", "STRING_LITERAL", "ERROR_RECONGNIGION"
-	};
+	private static String[] makeLiteralNames() {
+		return new String[] {
+			null, null, null, null, null, "'SET'", "'UNSET'", "'*'", "'/'", "'%'", 
+			"'+'", "'-'", "'='", "'>'", "'<'", "'!'", "'~'", "'|'", "'&'", "'^'", 
+			"'.'", "'('", "')'", "','", "';'"
+		};
+	}
+	private static final String[] _LITERAL_NAMES = makeLiteralNames();
+	private static String[] makeSymbolicNames() {
+		return new String[] {
+			null, "SPACE", "SPEC_MYSQL_COMMENT", "COMMENT_INPUT", "LINE_COMMENT", 
+			"SET", "UNSET", "STAR", "DIVIDE", "MODULE", "PLUS", "MINUS", "EQUAL_SYMBOL", 
+			"GREATER_SYMBOL", "LESS_SYMBOL", "EXCLAMATION_SYMBOL", "BIT_NOT_OP", 
+			"BIT_OR_OP", "BIT_AND_OP", "BIT_XOR_OP", "DOT", "LR_BRACKET", "RR_BRACKET", 
+			"COMMA", "SEMI", "DOT_ID", "ID", "REVERSE_QUOTE_ID", "STRING_LITERAL", 
+			"ERROR_RECONGNIGION"
+		};
+	}
+	private static final String[] _SYMBOLIC_NAMES = makeSymbolicNames();
 	public static final Vocabulary VOCABULARY = new VocabularyImpl(_LITERAL_NAMES, _SYMBOLIC_NAMES);
 
 	/**
@@ -93,6 +105,7 @@ public class JobTaskParser extends Parser {
 		super(input);
 		_interp = new ParserATNSimulator(this,_ATN,_decisionToDFA,_sharedContextCache);
 	}
+
 	public static class RootContext extends ParserRuleContext {
 		public TerminalNode EOF() { return getToken(JobTaskParser.EOF, 0); }
 		public JobTasksContext jobTasks() {
@@ -222,7 +235,7 @@ public class JobTaskParser extends Parser {
 					default:
 						throw new NoViableAltException(this);
 					}
-					}
+					} 
 				}
 				setState(43);
 				_errHandler.sync(this);
@@ -622,6 +635,10 @@ public class JobTaskParser extends Parser {
 		public FileDirContext fileDir() {
 			return getRuleContext(FileDirContext.class,0);
 		}
+		public List<TerminalNode> DIVIDE() { return getTokens(JobTaskParser.DIVIDE); }
+		public TerminalNode DIVIDE(int i) {
+			return getToken(JobTaskParser.DIVIDE, i);
+		}
 		public TerminalNode STRING_LITERAL() { return getToken(JobTaskParser.STRING_LITERAL, 0); }
 		public ParamExprContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -734,7 +751,7 @@ public class JobTaskParser extends Parser {
 							_la = _input.LA(1);
 						}
 						}
-						}
+						} 
 					}
 					setState(115);
 					_errHandler.sync(this);
@@ -763,6 +780,10 @@ public class JobTaskParser extends Parser {
 	}
 
 	public static class FileDirContext extends ParserRuleContext {
+		public List<TerminalNode> DIVIDE() { return getTokens(JobTaskParser.DIVIDE); }
+		public TerminalNode DIVIDE(int i) {
+			return getToken(JobTaskParser.DIVIDE, i);
+		}
 		public List<TerminalNode> ID() { return getTokens(JobTaskParser.ID); }
 		public TerminalNode ID(int i) {
 			return getToken(JobTaskParser.ID, i);
@@ -770,6 +791,10 @@ public class JobTaskParser extends Parser {
 		public List<TerminalNode> DOT_ID() { return getTokens(JobTaskParser.DOT_ID); }
 		public TerminalNode DOT_ID(int i) {
 			return getToken(JobTaskParser.DOT_ID, i);
+		}
+		public List<TerminalNode> STAR() { return getTokens(JobTaskParser.STAR); }
+		public TerminalNode STAR(int i) {
+			return getToken(JobTaskParser.STAR, i);
 		}
 		public FileDirContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -858,7 +883,7 @@ public class JobTaskParser extends Parser {
 						throw new NoViableAltException(this);
 					}
 					}
-					}
+					} 
 				}
 				setState(142);
 				_errHandler.sync(this);

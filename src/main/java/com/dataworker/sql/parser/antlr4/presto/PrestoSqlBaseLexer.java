@@ -1,4 +1,4 @@
-// Generated from com/dataworker/sql/parser/antlr4/presto/PrestoSqlBase.g4 by ANTLR 4.7.1
+// Generated from com/dataworker/sql/parser/antlr4/presto/PrestoSqlBase.g4 by ANTLR 4.8
 package com.dataworker.sql.parser.antlr4.presto;
 import org.antlr.v4.runtime.Lexer;
 import org.antlr.v4.runtime.CharStream;
@@ -11,7 +11,7 @@ import org.antlr.v4.runtime.misc.*;
 
 @SuppressWarnings({"all", "warnings", "unchecked", "unused", "cast"})
 public class PrestoSqlBaseLexer extends Lexer {
-	static { RuntimeMetaData.checkVersion("4.7.1", RuntimeMetaData.VERSION); }
+	static { RuntimeMetaData.checkVersion("4.8", RuntimeMetaData.VERSION); }
 
 	protected static final DFA[] _decisionToDFA;
 	protected static final PredictionContextCache _sharedContextCache =
@@ -62,112 +62,123 @@ public class PrestoSqlBaseLexer extends Lexer {
 		"DEFAULT_MODE"
 	};
 
-	public static final String[] ruleNames = {
-		"T__0", "T__1", "T__2", "T__3", "T__4", "T__5", "T__6", "T__7", "T__8", 
-		"ADD", "ADMIN", "ALL", "ALTER", "ANALYZE", "AND", "ANY", "ARRAY", "AS", 
-		"ASC", "AT", "AUTHORIZATION", "BERNOULLI", "BETWEEN", "BY", "CALL", "CASCADE", 
-		"CASE", "CAST", "CATALOGS", "COLUMN", "COLUMNS", "COMMENT", "COMMIT", 
-		"COMMITTED", "CONSTRAINT", "CREATE", "CROSS", "CUBE", "CURRENT", "CURRENT_DATE", 
-		"CURRENT_PATH", "CURRENT_ROLE", "CURRENT_TIME", "CURRENT_TIMESTAMP", "CURRENT_USER", 
-		"DATA", "DATE", "DAY", "DEALLOCATE", "DEFINER", "DELETE", "DESC", "DESCRIBE", 
-		"DISTINCT", "DISTRIBUTED", "DOUBLE", "DROP", "ELSE", "END", "ESCAPE", 
-		"EXCEPT", "EXCLUDING", "EXECUTE", "EXISTS", "EXPLAIN", "EXTRACT", "FALSE", 
-		"FETCH", "FILTER", "FIRST", "FOLLOWING", "FOR", "FORMAT", "FROM", "FULL", 
-		"FUNCTIONS", "GRANT", "GRANTED", "GRANTS", "GRAPHVIZ", "GROUP", "GROUPING", 
-		"HAVING", "HOUR", "IF", "IGNORE", "IN", "INCLUDING", "INNER", "INPUT", 
-		"INSERT", "INTERSECT", "INTERVAL", "INTO", "INVOKER", "IO", "IS", "ISOLATION", 
-		"JOIN", "JSON", "LAST", "LATERAL", "LEFT", "LEVEL", "LIKE", "LIMIT", "LOCALTIME", 
-		"LOCALTIMESTAMP", "LOGICAL", "MAP", "MINUTE", "MONTH", "NATURAL", "NEXT", 
-		"NFC", "NFD", "NFKC", "NFKD", "NO", "NONE", "NORMALIZE", "NOT", "NULL", 
-		"NULLIF", "NULLS", "OFFSET", "ON", "ONLY", "OPTION", "OR", "ORDER", "ORDINALITY", 
-		"OUTER", "OUTPUT", "OVER", "PARTITION", "PARTITIONS", "PATH", "POSITION", 
-		"PRECEDING", "PRECISION", "PREPARE", "PRIVILEGES", "PROPERTIES", "RANGE", 
-		"READ", "RECURSIVE", "RENAME", "REPEATABLE", "REPLACE", "RESET", "RESPECT", 
-		"RESTRICT", "REVOKE", "RIGHT", "ROLE", "ROLES", "ROLLBACK", "ROLLUP", 
-		"ROW", "ROWS", "SCHEMA", "SCHEMAS", "SECOND", "SECURITY", "SELECT", "SERIALIZABLE", 
-		"SESSION", "SET", "SETS", "SHOW", "SOME", "START", "STATS", "SUBSTRING", 
-		"SYSTEM", "TABLE", "TABLES", "TABLESAMPLE", "TEXT", "THEN", "TIES", "TIME", 
-		"TIMESTAMP", "TO", "TRANSACTION", "TRUE", "TRY_CAST", "TYPE", "UESCAPE", 
-		"UNBOUNDED", "UNCOMMITTED", "UNION", "UNNEST", "USE", "USER", "USING", 
-		"VALIDATE", "VALUES", "VERBOSE", "VIEW", "WHEN", "WHERE", "WITH", "WITHOUT", 
-		"WORK", "WRITE", "YEAR", "ZONE", "EQ", "NEQ", "LT", "LTE", "GT", "GTE", 
-		"PLUS", "MINUS", "ASTERISK", "SLASH", "PERCENT", "CONCAT", "STRING", "UNICODE_STRING", 
-		"BINARY_LITERAL", "INTEGER_VALUE", "DECIMAL_VALUE", "DOUBLE_VALUE", "IDENTIFIER", 
-		"DIGIT_IDENTIFIER", "QUOTED_IDENTIFIER", "BACKQUOTED_IDENTIFIER", "EXPONENT", 
-		"DIGIT", "LETTER", "SIMPLE_COMMENT", "BRACKETED_COMMENT", "WS", "UNRECOGNIZED"
-	};
+	private static String[] makeRuleNames() {
+		return new String[] {
+			"T__0", "T__1", "T__2", "T__3", "T__4", "T__5", "T__6", "T__7", "T__8", 
+			"ADD", "ADMIN", "ALL", "ALTER", "ANALYZE", "AND", "ANY", "ARRAY", "AS", 
+			"ASC", "AT", "AUTHORIZATION", "BERNOULLI", "BETWEEN", "BY", "CALL", "CASCADE", 
+			"CASE", "CAST", "CATALOGS", "COLUMN", "COLUMNS", "COMMENT", "COMMIT", 
+			"COMMITTED", "CONSTRAINT", "CREATE", "CROSS", "CUBE", "CURRENT", "CURRENT_DATE", 
+			"CURRENT_PATH", "CURRENT_ROLE", "CURRENT_TIME", "CURRENT_TIMESTAMP", 
+			"CURRENT_USER", "DATA", "DATE", "DAY", "DEALLOCATE", "DEFINER", "DELETE", 
+			"DESC", "DESCRIBE", "DISTINCT", "DISTRIBUTED", "DOUBLE", "DROP", "ELSE", 
+			"END", "ESCAPE", "EXCEPT", "EXCLUDING", "EXECUTE", "EXISTS", "EXPLAIN", 
+			"EXTRACT", "FALSE", "FETCH", "FILTER", "FIRST", "FOLLOWING", "FOR", "FORMAT", 
+			"FROM", "FULL", "FUNCTIONS", "GRANT", "GRANTED", "GRANTS", "GRAPHVIZ", 
+			"GROUP", "GROUPING", "HAVING", "HOUR", "IF", "IGNORE", "IN", "INCLUDING", 
+			"INNER", "INPUT", "INSERT", "INTERSECT", "INTERVAL", "INTO", "INVOKER", 
+			"IO", "IS", "ISOLATION", "JOIN", "JSON", "LAST", "LATERAL", "LEFT", "LEVEL", 
+			"LIKE", "LIMIT", "LOCALTIME", "LOCALTIMESTAMP", "LOGICAL", "MAP", "MINUTE", 
+			"MONTH", "NATURAL", "NEXT", "NFC", "NFD", "NFKC", "NFKD", "NO", "NONE", 
+			"NORMALIZE", "NOT", "NULL", "NULLIF", "NULLS", "OFFSET", "ON", "ONLY", 
+			"OPTION", "OR", "ORDER", "ORDINALITY", "OUTER", "OUTPUT", "OVER", "PARTITION", 
+			"PARTITIONS", "PATH", "POSITION", "PRECEDING", "PRECISION", "PREPARE", 
+			"PRIVILEGES", "PROPERTIES", "RANGE", "READ", "RECURSIVE", "RENAME", "REPEATABLE", 
+			"REPLACE", "RESET", "RESPECT", "RESTRICT", "REVOKE", "RIGHT", "ROLE", 
+			"ROLES", "ROLLBACK", "ROLLUP", "ROW", "ROWS", "SCHEMA", "SCHEMAS", "SECOND", 
+			"SECURITY", "SELECT", "SERIALIZABLE", "SESSION", "SET", "SETS", "SHOW", 
+			"SOME", "START", "STATS", "SUBSTRING", "SYSTEM", "TABLE", "TABLES", "TABLESAMPLE", 
+			"TEXT", "THEN", "TIES", "TIME", "TIMESTAMP", "TO", "TRANSACTION", "TRUE", 
+			"TRY_CAST", "TYPE", "UESCAPE", "UNBOUNDED", "UNCOMMITTED", "UNION", "UNNEST", 
+			"USE", "USER", "USING", "VALIDATE", "VALUES", "VERBOSE", "VIEW", "WHEN", 
+			"WHERE", "WITH", "WITHOUT", "WORK", "WRITE", "YEAR", "ZONE", "EQ", "NEQ", 
+			"LT", "LTE", "GT", "GTE", "PLUS", "MINUS", "ASTERISK", "SLASH", "PERCENT", 
+			"CONCAT", "STRING", "UNICODE_STRING", "BINARY_LITERAL", "INTEGER_VALUE", 
+			"DECIMAL_VALUE", "DOUBLE_VALUE", "IDENTIFIER", "DIGIT_IDENTIFIER", "QUOTED_IDENTIFIER", 
+			"BACKQUOTED_IDENTIFIER", "EXPONENT", "DIGIT", "LETTER", "SIMPLE_COMMENT", 
+			"BRACKETED_COMMENT", "WS", "UNRECOGNIZED"
+		};
+	}
+	public static final String[] ruleNames = makeRuleNames();
 
-	private static final String[] _LITERAL_NAMES = {
-		null, "'.'", "'('", "')'", "','", "'?'", "'->'", "'['", "']'", "'=>'", 
-		"'ADD'", "'ADMIN'", "'ALL'", "'ALTER'", "'ANALYZE'", "'AND'", "'ANY'", 
-		"'ARRAY'", "'AS'", "'ASC'", "'AT'", "'AUTHORIZATION'", "'BERNOULLI'", 
-		"'BETWEEN'", "'BY'", "'CALL'", "'CASCADE'", "'CASE'", "'CAST'", "'CATALOGS'", 
-		"'COLUMN'", "'COLUMNS'", "'COMMENT'", "'COMMIT'", "'COMMITTED'", "'CONSTRAINT'", 
-		"'CREATE'", "'CROSS'", "'CUBE'", "'CURRENT'", "'CURRENT_DATE'", "'CURRENT_PATH'", 
-		"'CURRENT_ROLE'", "'CURRENT_TIME'", "'CURRENT_TIMESTAMP'", "'CURRENT_USER'", 
-		"'DATA'", "'DATE'", "'DAY'", "'DEALLOCATE'", "'DEFINER'", "'DELETE'", 
-		"'DESC'", "'DESCRIBE'", "'DISTINCT'", "'DISTRIBUTED'", "'DOUBLE'", "'DROP'", 
-		"'ELSE'", "'END'", "'ESCAPE'", "'EXCEPT'", "'EXCLUDING'", "'EXECUTE'", 
-		"'EXISTS'", "'EXPLAIN'", "'EXTRACT'", "'FALSE'", "'FETCH'", "'FILTER'", 
-		"'FIRST'", "'FOLLOWING'", "'FOR'", "'FORMAT'", "'FROM'", "'FULL'", "'FUNCTIONS'", 
-		"'GRANT'", "'GRANTED'", "'GRANTS'", "'GRAPHVIZ'", "'GROUP'", "'GROUPING'", 
-		"'HAVING'", "'HOUR'", "'IF'", "'IGNORE'", "'IN'", "'INCLUDING'", "'INNER'", 
-		"'INPUT'", "'INSERT'", "'INTERSECT'", "'INTERVAL'", "'INTO'", "'INVOKER'", 
-		"'IO'", "'IS'", "'ISOLATION'", "'JOIN'", "'JSON'", "'LAST'", "'LATERAL'", 
-		"'LEFT'", "'LEVEL'", "'LIKE'", "'LIMIT'", "'LOCALTIME'", "'LOCALTIMESTAMP'", 
-		"'LOGICAL'", "'MAP'", "'MINUTE'", "'MONTH'", "'NATURAL'", "'NEXT'", "'NFC'", 
-		"'NFD'", "'NFKC'", "'NFKD'", "'NO'", "'NONE'", "'NORMALIZE'", "'NOT'", 
-		"'NULL'", "'NULLIF'", "'NULLS'", "'OFFSET'", "'ON'", "'ONLY'", "'OPTION'", 
-		"'OR'", "'ORDER'", "'ORDINALITY'", "'OUTER'", "'OUTPUT'", "'OVER'", "'PARTITION'", 
-		"'PARTITIONS'", "'PATH'", "'POSITION'", "'PRECEDING'", "'PRECISION'", 
-		"'PREPARE'", "'PRIVILEGES'", "'PROPERTIES'", "'RANGE'", "'READ'", "'RECURSIVE'", 
-		"'RENAME'", "'REPEATABLE'", "'REPLACE'", "'RESET'", "'RESPECT'", "'RESTRICT'", 
-		"'REVOKE'", "'RIGHT'", "'ROLE'", "'ROLES'", "'ROLLBACK'", "'ROLLUP'", 
-		"'ROW'", "'ROWS'", "'SCHEMA'", "'SCHEMAS'", "'SECOND'", "'SECURITY'", 
-		"'SELECT'", "'SERIALIZABLE'", "'SESSION'", "'SET'", "'SETS'", "'SHOW'", 
-		"'SOME'", "'START'", "'STATS'", "'SUBSTRING'", "'SYSTEM'", "'TABLE'", 
-		"'TABLES'", "'TABLESAMPLE'", "'TEXT'", "'THEN'", "'TIES'", "'TIME'", "'TIMESTAMP'", 
-		"'TO'", "'TRANSACTION'", "'TRUE'", "'TRY_CAST'", "'TYPE'", "'UESCAPE'", 
-		"'UNBOUNDED'", "'UNCOMMITTED'", "'UNION'", "'UNNEST'", "'USE'", "'USER'", 
-		"'USING'", "'VALIDATE'", "'VALUES'", "'VERBOSE'", "'VIEW'", "'WHEN'", 
-		"'WHERE'", "'WITH'", "'WITHOUT'", "'WORK'", "'WRITE'", "'YEAR'", "'ZONE'", 
-		"'='", null, "'<'", "'<='", "'>'", "'>='", "'+'", "'-'", "'*'", "'/'", 
-		"'%'", "'||'"
-	};
-	private static final String[] _SYMBOLIC_NAMES = {
-		null, null, null, null, null, null, null, null, null, null, "ADD", "ADMIN", 
-		"ALL", "ALTER", "ANALYZE", "AND", "ANY", "ARRAY", "AS", "ASC", "AT", "AUTHORIZATION", 
-		"BERNOULLI", "BETWEEN", "BY", "CALL", "CASCADE", "CASE", "CAST", "CATALOGS", 
-		"COLUMN", "COLUMNS", "COMMENT", "COMMIT", "COMMITTED", "CONSTRAINT", "CREATE", 
-		"CROSS", "CUBE", "CURRENT", "CURRENT_DATE", "CURRENT_PATH", "CURRENT_ROLE", 
-		"CURRENT_TIME", "CURRENT_TIMESTAMP", "CURRENT_USER", "DATA", "DATE", "DAY", 
-		"DEALLOCATE", "DEFINER", "DELETE", "DESC", "DESCRIBE", "DISTINCT", "DISTRIBUTED", 
-		"DOUBLE", "DROP", "ELSE", "END", "ESCAPE", "EXCEPT", "EXCLUDING", "EXECUTE", 
-		"EXISTS", "EXPLAIN", "EXTRACT", "FALSE", "FETCH", "FILTER", "FIRST", "FOLLOWING", 
-		"FOR", "FORMAT", "FROM", "FULL", "FUNCTIONS", "GRANT", "GRANTED", "GRANTS", 
-		"GRAPHVIZ", "GROUP", "GROUPING", "HAVING", "HOUR", "IF", "IGNORE", "IN", 
-		"INCLUDING", "INNER", "INPUT", "INSERT", "INTERSECT", "INTERVAL", "INTO", 
-		"INVOKER", "IO", "IS", "ISOLATION", "JOIN", "JSON", "LAST", "LATERAL", 
-		"LEFT", "LEVEL", "LIKE", "LIMIT", "LOCALTIME", "LOCALTIMESTAMP", "LOGICAL", 
-		"MAP", "MINUTE", "MONTH", "NATURAL", "NEXT", "NFC", "NFD", "NFKC", "NFKD", 
-		"NO", "NONE", "NORMALIZE", "NOT", "NULL", "NULLIF", "NULLS", "OFFSET", 
-		"ON", "ONLY", "OPTION", "OR", "ORDER", "ORDINALITY", "OUTER", "OUTPUT", 
-		"OVER", "PARTITION", "PARTITIONS", "PATH", "POSITION", "PRECEDING", "PRECISION", 
-		"PREPARE", "PRIVILEGES", "PROPERTIES", "RANGE", "READ", "RECURSIVE", "RENAME", 
-		"REPEATABLE", "REPLACE", "RESET", "RESPECT", "RESTRICT", "REVOKE", "RIGHT", 
-		"ROLE", "ROLES", "ROLLBACK", "ROLLUP", "ROW", "ROWS", "SCHEMA", "SCHEMAS", 
-		"SECOND", "SECURITY", "SELECT", "SERIALIZABLE", "SESSION", "SET", "SETS", 
-		"SHOW", "SOME", "START", "STATS", "SUBSTRING", "SYSTEM", "TABLE", "TABLES", 
-		"TABLESAMPLE", "TEXT", "THEN", "TIES", "TIME", "TIMESTAMP", "TO", "TRANSACTION", 
-		"TRUE", "TRY_CAST", "TYPE", "UESCAPE", "UNBOUNDED", "UNCOMMITTED", "UNION", 
-		"UNNEST", "USE", "USER", "USING", "VALIDATE", "VALUES", "VERBOSE", "VIEW", 
-		"WHEN", "WHERE", "WITH", "WITHOUT", "WORK", "WRITE", "YEAR", "ZONE", "EQ", 
-		"NEQ", "LT", "LTE", "GT", "GTE", "PLUS", "MINUS", "ASTERISK", "SLASH", 
-		"PERCENT", "CONCAT", "STRING", "UNICODE_STRING", "BINARY_LITERAL", "INTEGER_VALUE", 
-		"DECIMAL_VALUE", "DOUBLE_VALUE", "IDENTIFIER", "DIGIT_IDENTIFIER", "QUOTED_IDENTIFIER", 
-		"BACKQUOTED_IDENTIFIER", "SIMPLE_COMMENT", "BRACKETED_COMMENT", "WS", 
-		"UNRECOGNIZED"
-	};
+	private static String[] makeLiteralNames() {
+		return new String[] {
+			null, "'.'", "'('", "')'", "','", "'?'", "'->'", "'['", "']'", "'=>'", 
+			"'ADD'", "'ADMIN'", "'ALL'", "'ALTER'", "'ANALYZE'", "'AND'", "'ANY'", 
+			"'ARRAY'", "'AS'", "'ASC'", "'AT'", "'AUTHORIZATION'", "'BERNOULLI'", 
+			"'BETWEEN'", "'BY'", "'CALL'", "'CASCADE'", "'CASE'", "'CAST'", "'CATALOGS'", 
+			"'COLUMN'", "'COLUMNS'", "'COMMENT'", "'COMMIT'", "'COMMITTED'", "'CONSTRAINT'", 
+			"'CREATE'", "'CROSS'", "'CUBE'", "'CURRENT'", "'CURRENT_DATE'", "'CURRENT_PATH'", 
+			"'CURRENT_ROLE'", "'CURRENT_TIME'", "'CURRENT_TIMESTAMP'", "'CURRENT_USER'", 
+			"'DATA'", "'DATE'", "'DAY'", "'DEALLOCATE'", "'DEFINER'", "'DELETE'", 
+			"'DESC'", "'DESCRIBE'", "'DISTINCT'", "'DISTRIBUTED'", "'DOUBLE'", "'DROP'", 
+			"'ELSE'", "'END'", "'ESCAPE'", "'EXCEPT'", "'EXCLUDING'", "'EXECUTE'", 
+			"'EXISTS'", "'EXPLAIN'", "'EXTRACT'", "'FALSE'", "'FETCH'", "'FILTER'", 
+			"'FIRST'", "'FOLLOWING'", "'FOR'", "'FORMAT'", "'FROM'", "'FULL'", "'FUNCTIONS'", 
+			"'GRANT'", "'GRANTED'", "'GRANTS'", "'GRAPHVIZ'", "'GROUP'", "'GROUPING'", 
+			"'HAVING'", "'HOUR'", "'IF'", "'IGNORE'", "'IN'", "'INCLUDING'", "'INNER'", 
+			"'INPUT'", "'INSERT'", "'INTERSECT'", "'INTERVAL'", "'INTO'", "'INVOKER'", 
+			"'IO'", "'IS'", "'ISOLATION'", "'JOIN'", "'JSON'", "'LAST'", "'LATERAL'", 
+			"'LEFT'", "'LEVEL'", "'LIKE'", "'LIMIT'", "'LOCALTIME'", "'LOCALTIMESTAMP'", 
+			"'LOGICAL'", "'MAP'", "'MINUTE'", "'MONTH'", "'NATURAL'", "'NEXT'", "'NFC'", 
+			"'NFD'", "'NFKC'", "'NFKD'", "'NO'", "'NONE'", "'NORMALIZE'", "'NOT'", 
+			"'NULL'", "'NULLIF'", "'NULLS'", "'OFFSET'", "'ON'", "'ONLY'", "'OPTION'", 
+			"'OR'", "'ORDER'", "'ORDINALITY'", "'OUTER'", "'OUTPUT'", "'OVER'", "'PARTITION'", 
+			"'PARTITIONS'", "'PATH'", "'POSITION'", "'PRECEDING'", "'PRECISION'", 
+			"'PREPARE'", "'PRIVILEGES'", "'PROPERTIES'", "'RANGE'", "'READ'", "'RECURSIVE'", 
+			"'RENAME'", "'REPEATABLE'", "'REPLACE'", "'RESET'", "'RESPECT'", "'RESTRICT'", 
+			"'REVOKE'", "'RIGHT'", "'ROLE'", "'ROLES'", "'ROLLBACK'", "'ROLLUP'", 
+			"'ROW'", "'ROWS'", "'SCHEMA'", "'SCHEMAS'", "'SECOND'", "'SECURITY'", 
+			"'SELECT'", "'SERIALIZABLE'", "'SESSION'", "'SET'", "'SETS'", "'SHOW'", 
+			"'SOME'", "'START'", "'STATS'", "'SUBSTRING'", "'SYSTEM'", "'TABLE'", 
+			"'TABLES'", "'TABLESAMPLE'", "'TEXT'", "'THEN'", "'TIES'", "'TIME'", 
+			"'TIMESTAMP'", "'TO'", "'TRANSACTION'", "'TRUE'", "'TRY_CAST'", "'TYPE'", 
+			"'UESCAPE'", "'UNBOUNDED'", "'UNCOMMITTED'", "'UNION'", "'UNNEST'", "'USE'", 
+			"'USER'", "'USING'", "'VALIDATE'", "'VALUES'", "'VERBOSE'", "'VIEW'", 
+			"'WHEN'", "'WHERE'", "'WITH'", "'WITHOUT'", "'WORK'", "'WRITE'", "'YEAR'", 
+			"'ZONE'", "'='", null, "'<'", "'<='", "'>'", "'>='", "'+'", "'-'", "'*'", 
+			"'/'", "'%'", "'||'"
+		};
+	}
+	private static final String[] _LITERAL_NAMES = makeLiteralNames();
+	private static String[] makeSymbolicNames() {
+		return new String[] {
+			null, null, null, null, null, null, null, null, null, null, "ADD", "ADMIN", 
+			"ALL", "ALTER", "ANALYZE", "AND", "ANY", "ARRAY", "AS", "ASC", "AT", 
+			"AUTHORIZATION", "BERNOULLI", "BETWEEN", "BY", "CALL", "CASCADE", "CASE", 
+			"CAST", "CATALOGS", "COLUMN", "COLUMNS", "COMMENT", "COMMIT", "COMMITTED", 
+			"CONSTRAINT", "CREATE", "CROSS", "CUBE", "CURRENT", "CURRENT_DATE", "CURRENT_PATH", 
+			"CURRENT_ROLE", "CURRENT_TIME", "CURRENT_TIMESTAMP", "CURRENT_USER", 
+			"DATA", "DATE", "DAY", "DEALLOCATE", "DEFINER", "DELETE", "DESC", "DESCRIBE", 
+			"DISTINCT", "DISTRIBUTED", "DOUBLE", "DROP", "ELSE", "END", "ESCAPE", 
+			"EXCEPT", "EXCLUDING", "EXECUTE", "EXISTS", "EXPLAIN", "EXTRACT", "FALSE", 
+			"FETCH", "FILTER", "FIRST", "FOLLOWING", "FOR", "FORMAT", "FROM", "FULL", 
+			"FUNCTIONS", "GRANT", "GRANTED", "GRANTS", "GRAPHVIZ", "GROUP", "GROUPING", 
+			"HAVING", "HOUR", "IF", "IGNORE", "IN", "INCLUDING", "INNER", "INPUT", 
+			"INSERT", "INTERSECT", "INTERVAL", "INTO", "INVOKER", "IO", "IS", "ISOLATION", 
+			"JOIN", "JSON", "LAST", "LATERAL", "LEFT", "LEVEL", "LIKE", "LIMIT", 
+			"LOCALTIME", "LOCALTIMESTAMP", "LOGICAL", "MAP", "MINUTE", "MONTH", "NATURAL", 
+			"NEXT", "NFC", "NFD", "NFKC", "NFKD", "NO", "NONE", "NORMALIZE", "NOT", 
+			"NULL", "NULLIF", "NULLS", "OFFSET", "ON", "ONLY", "OPTION", "OR", "ORDER", 
+			"ORDINALITY", "OUTER", "OUTPUT", "OVER", "PARTITION", "PARTITIONS", "PATH", 
+			"POSITION", "PRECEDING", "PRECISION", "PREPARE", "PRIVILEGES", "PROPERTIES", 
+			"RANGE", "READ", "RECURSIVE", "RENAME", "REPEATABLE", "REPLACE", "RESET", 
+			"RESPECT", "RESTRICT", "REVOKE", "RIGHT", "ROLE", "ROLES", "ROLLBACK", 
+			"ROLLUP", "ROW", "ROWS", "SCHEMA", "SCHEMAS", "SECOND", "SECURITY", "SELECT", 
+			"SERIALIZABLE", "SESSION", "SET", "SETS", "SHOW", "SOME", "START", "STATS", 
+			"SUBSTRING", "SYSTEM", "TABLE", "TABLES", "TABLESAMPLE", "TEXT", "THEN", 
+			"TIES", "TIME", "TIMESTAMP", "TO", "TRANSACTION", "TRUE", "TRY_CAST", 
+			"TYPE", "UESCAPE", "UNBOUNDED", "UNCOMMITTED", "UNION", "UNNEST", "USE", 
+			"USER", "USING", "VALIDATE", "VALUES", "VERBOSE", "VIEW", "WHEN", "WHERE", 
+			"WITH", "WITHOUT", "WORK", "WRITE", "YEAR", "ZONE", "EQ", "NEQ", "LT", 
+			"LTE", "GT", "GTE", "PLUS", "MINUS", "ASTERISK", "SLASH", "PERCENT", 
+			"CONCAT", "STRING", "UNICODE_STRING", "BINARY_LITERAL", "INTEGER_VALUE", 
+			"DECIMAL_VALUE", "DOUBLE_VALUE", "IDENTIFIER", "DIGIT_IDENTIFIER", "QUOTED_IDENTIFIER", 
+			"BACKQUOTED_IDENTIFIER", "SIMPLE_COMMENT", "BRACKETED_COMMENT", "WS", 
+			"UNRECOGNIZED"
+		};
+	}
+	private static final String[] _SYMBOLIC_NAMES = makeSymbolicNames();
 	public static final Vocabulary VOCABULARY = new VocabularyImpl(_LITERAL_NAMES, _SYMBOLIC_NAMES);
 
 	/**

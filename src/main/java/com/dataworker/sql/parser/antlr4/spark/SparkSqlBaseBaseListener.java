@@ -1,4 +1,4 @@
-// Generated from com/dataworker/sql/parser/antlr4/spark/SparkSqlBase.g4 by ANTLR 4.7.1
+// Generated from com/dataworker/sql/parser/antlr4/spark/SparkSqlBase.g4 by ANTLR 4.8
 package com.dataworker.sql.parser.antlr4.spark;
 
 import org.antlr.v4.runtime.ParserRuleContext;
@@ -1876,6 +1876,42 @@ public class SparkSqlBaseBaseListener implements SparkSqlBaseListener {
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
+	@Override public void enterGroupByClause(SparkSqlBaseParser.GroupByClauseContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitGroupByClause(SparkSqlBaseParser.GroupByClauseContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterGroupingAnalytics(SparkSqlBaseParser.GroupingAnalyticsContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitGroupingAnalytics(SparkSqlBaseParser.GroupingAnalyticsContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterGroupingElement(SparkSqlBaseParser.GroupingElementContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitGroupingElement(SparkSqlBaseParser.GroupingElementContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
 	@Override public void enterGroupingSet(SparkSqlBaseParser.GroupingSetContext ctx) { }
 	/**
 	 * {@inheritDoc}
@@ -2399,6 +2435,18 @@ public class SparkSqlBaseBaseListener implements SparkSqlBaseListener {
 	 * <p>The default implementation does nothing.</p>
 	 */
 	@Override public void exitExpression(SparkSqlBaseParser.ExpressionContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterExpressionSeq(SparkSqlBaseParser.ExpressionSeqContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitExpressionSeq(SparkSqlBaseParser.ExpressionSeqContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
@@ -2987,6 +3035,30 @@ public class SparkSqlBaseBaseListener implements SparkSqlBaseListener {
 	 * <p>The default implementation does nothing.</p>
 	 */
 	@Override public void exitComplexDataType(SparkSqlBaseParser.ComplexDataTypeContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterYearMonthIntervalDataType(SparkSqlBaseParser.YearMonthIntervalDataTypeContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitYearMonthIntervalDataType(SparkSqlBaseParser.YearMonthIntervalDataTypeContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterDayTimeIntervalDataType(SparkSqlBaseParser.DayTimeIntervalDataTypeContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitDayTimeIntervalDataType(SparkSqlBaseParser.DayTimeIntervalDataTypeContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
