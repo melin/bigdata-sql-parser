@@ -40,8 +40,8 @@
     </developers>
 
     <properties>
-        <kotlin.version>1.4.32</kotlin.version>
-        <antlr4.version>4.8-1</antlr4.version>
+        <kotlin.version>1.5.10</kotlin.version>
+        <antlr4.version>4.8</antlr4.version>
     </properties>
 
     <dependencies>
