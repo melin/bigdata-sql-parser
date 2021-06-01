@@ -222,18 +222,6 @@ public interface SparkSqlBaseListener extends ParseTreeListener {
 	 */
 	void exitAnalyze(SparkSqlBaseParser.AnalyzeContext ctx);
 	/**
-	 * Enter a parse tree produced by the {@code analyzeTables}
-	 * labeled alternative in {@link SparkSqlBaseParser#statement}.
-	 * @param ctx the parse tree
-	 */
-	void enterAnalyzeTables(SparkSqlBaseParser.AnalyzeTablesContext ctx);
-	/**
-	 * Exit a parse tree produced by the {@code analyzeTables}
-	 * labeled alternative in {@link SparkSqlBaseParser#statement}.
-	 * @param ctx the parse tree
-	 */
-	void exitAnalyzeTables(SparkSqlBaseParser.AnalyzeTablesContext ctx);
-	/**
 	 * Enter a parse tree produced by the {@code addTableColumns}
 	 * labeled alternative in {@link SparkSqlBaseParser#statement}.
 	 * @param ctx the parse tree
@@ -1756,36 +1744,6 @@ public interface SparkSqlBaseListener extends ParseTreeListener {
 	 */
 	void exitAggregationClause(SparkSqlBaseParser.AggregationClauseContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link SparkSqlBaseParser#groupByClause}.
-	 * @param ctx the parse tree
-	 */
-	void enterGroupByClause(SparkSqlBaseParser.GroupByClauseContext ctx);
-	/**
-	 * Exit a parse tree produced by {@link SparkSqlBaseParser#groupByClause}.
-	 * @param ctx the parse tree
-	 */
-	void exitGroupByClause(SparkSqlBaseParser.GroupByClauseContext ctx);
-	/**
-	 * Enter a parse tree produced by {@link SparkSqlBaseParser#groupingAnalytics}.
-	 * @param ctx the parse tree
-	 */
-	void enterGroupingAnalytics(SparkSqlBaseParser.GroupingAnalyticsContext ctx);
-	/**
-	 * Exit a parse tree produced by {@link SparkSqlBaseParser#groupingAnalytics}.
-	 * @param ctx the parse tree
-	 */
-	void exitGroupingAnalytics(SparkSqlBaseParser.GroupingAnalyticsContext ctx);
-	/**
-	 * Enter a parse tree produced by {@link SparkSqlBaseParser#groupingElement}.
-	 * @param ctx the parse tree
-	 */
-	void enterGroupingElement(SparkSqlBaseParser.GroupingElementContext ctx);
-	/**
-	 * Exit a parse tree produced by {@link SparkSqlBaseParser#groupingElement}.
-	 * @param ctx the parse tree
-	 */
-	void exitGroupingElement(SparkSqlBaseParser.GroupingElementContext ctx);
-	/**
 	 * Enter a parse tree produced by {@link SparkSqlBaseParser#groupingSet}.
 	 * @param ctx the parse tree
 	 */
@@ -2255,16 +2213,6 @@ public interface SparkSqlBaseListener extends ParseTreeListener {
 	 * @param ctx the parse tree
 	 */
 	void exitExpression(SparkSqlBaseParser.ExpressionContext ctx);
-	/**
-	 * Enter a parse tree produced by {@link SparkSqlBaseParser#expressionSeq}.
-	 * @param ctx the parse tree
-	 */
-	void enterExpressionSeq(SparkSqlBaseParser.ExpressionSeqContext ctx);
-	/**
-	 * Exit a parse tree produced by {@link SparkSqlBaseParser#expressionSeq}.
-	 * @param ctx the parse tree
-	 */
-	void exitExpressionSeq(SparkSqlBaseParser.ExpressionSeqContext ctx);
 	/**
 	 * Enter a parse tree produced by the {@code logicalNot}
 	 * labeled alternative in {@link SparkSqlBaseParser#booleanExpression}.
@@ -2829,30 +2777,6 @@ public interface SparkSqlBaseListener extends ParseTreeListener {
 	 * @param ctx the parse tree
 	 */
 	void exitComplexDataType(SparkSqlBaseParser.ComplexDataTypeContext ctx);
-	/**
-	 * Enter a parse tree produced by the {@code yearMonthIntervalDataType}
-	 * labeled alternative in {@link SparkSqlBaseParser#dataType}.
-	 * @param ctx the parse tree
-	 */
-	void enterYearMonthIntervalDataType(SparkSqlBaseParser.YearMonthIntervalDataTypeContext ctx);
-	/**
-	 * Exit a parse tree produced by the {@code yearMonthIntervalDataType}
-	 * labeled alternative in {@link SparkSqlBaseParser#dataType}.
-	 * @param ctx the parse tree
-	 */
-	void exitYearMonthIntervalDataType(SparkSqlBaseParser.YearMonthIntervalDataTypeContext ctx);
-	/**
-	 * Enter a parse tree produced by the {@code dayTimeIntervalDataType}
-	 * labeled alternative in {@link SparkSqlBaseParser#dataType}.
-	 * @param ctx the parse tree
-	 */
-	void enterDayTimeIntervalDataType(SparkSqlBaseParser.DayTimeIntervalDataTypeContext ctx);
-	/**
-	 * Exit a parse tree produced by the {@code dayTimeIntervalDataType}
-	 * labeled alternative in {@link SparkSqlBaseParser#dataType}.
-	 * @param ctx the parse tree
-	 */
-	void exitDayTimeIntervalDataType(SparkSqlBaseParser.DayTimeIntervalDataTypeContext ctx);
 	/**
 	 * Enter a parse tree produced by the {@code primitiveDataType}
 	 * labeled alternative in {@link SparkSqlBaseParser#dataType}.
